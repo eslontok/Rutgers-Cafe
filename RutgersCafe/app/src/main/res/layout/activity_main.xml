@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeToTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Welcome_To"
+        android:textColor="@android:color/holo_red_light"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/rutgersCafeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Rutgers_Cafe"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeToTextView" />
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="0dp"
+        android:layout_height="206dp"
+        android:contentDescription="@string/mainImage"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rutgersCafeTextView"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@drawable/main_homepage" />
+
+    <ImageView
+        android:id="@+id/donutImageButton"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/donutImage"
+        android:onClick="showActivityDonuts"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"
+        app:srcCompat="@drawable/main_donuts" />
+
+    <ImageView
+        android:id="@+id/coffeeImageButton"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/coffeeImage"
+        android:onClick="showActivityCoffee"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/main_coffee" />
+
+    <ImageView
+        android:id="@+id/basketImageButton"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/basketImage"
+        android:onClick="showActivityBasket"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"
+        app:srcCompat="@drawable/main_basket" />
+
+    <ImageView
+        android:id="@+id/ordersImageButton"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/ordersImage"
+        android:onClick="showActivityOrders"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/main_orders" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/knight1Image"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_knight" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/knight2Image"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_knight" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Order_Donuts"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donutImageButton" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Shopping_Basket"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basketImageButton" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Order_Coffee"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeImageButton" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/Orders"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordersImageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

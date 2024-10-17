@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Main -->
+    <string name="app_name">Project5</string>
+    <string name="Welcome_To">Welcome To</string>
+    <string name="Rutgers_Cafe">Rutgers Cafe</string>
+    <string name="Order_Donuts">Order Donuts</string>
+    <string name="Order_Coffee">Order Coffee</string>
+    <string name="Shopping_Basket">Shopping Basket</string>
+    <string name="Orders">Orders</string>
+
+    <string name="mainImage">Main Image</string>
+    <string name="donutImage">Donut Image</string>
+    <string name="coffeeImage">Coffee Image</string>
+    <string name="basketImage">Basket Image</string>
+    <string name="ordersImage">Orders Image</string>
+    <string name="knight1Image">Knight1 Image</string>
+    <string name="knight2Image">Knight2 Image</string>
+
+    <!-- Donuts -->
+    <string name="How_Many">How many would you like to add to your order?</string>
+    <string name="Add_Donut">Add To Order</string>
+    <string name="Default_Donut">Default Donut</string>
+    <string name="Default_Text_View">TextView</string>
+    <string name="Subtotal_Add_Donut">Subtotal:</string>
+    <string-array name = "num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <!-- Coffee -->
+    <string name="Coffee_Menu">Coffee Menu</string>
+    <string name="Size">Size:</string>
+    <string name="Quantity">Quantity:</string>
+    <string name="Add_Ins">Add-Ins:</string>
+    <string name="Subtotal">Subtotal:</string>
+    <string name="Default_Subtotal">$0.00</string>
+
+    <string name="Sweet_Cream">Sweet Cream</string>
+    <string name="Irish_Cream">Irish Cream</string>
+    <string name="French_Vanilla">French Vanilla</string>
+    <string name="Caramel">Caramel</string>
+    <string name="Mocha">Mocha</string>
+
+    <string name="coffeeImageOrderCoffee">Coffee Image</string>
+    <string name="Add_To_Order">Add To Order</string>
+
+    <!-- Shopping Basket -->
+    <string name="Sales_Tax">Sales Tax:</string>
+    <string name="Total">Total:</string>
+    <string name="Default_Sales_Tax">$0.00</string>
+    <string name="Default_Total">$0.00</string>
+    <string name="Place_Order">Place Order</string>
+
+    <!-- Orders -->
+    <string name="Store_Orders">Store Orders</string>
+
+</resources>

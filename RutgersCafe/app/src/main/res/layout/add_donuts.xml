@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAAEFB"
+    android:outlineProvider="none"
+    tools:context=".AddDonutActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="236dp"
+        android:layout_height="114dp"
+        android:text="@string/How_Many"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/How_Many" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="215dp"
+        android:layout_height="52dp"
+        app:cardBackgroundColor="#A574FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <Spinner
+            android:id="@+id/donutNum"
+            android:layout_width="214dp"
+            android:layout_height="49dp"
+            android:backgroundTint="#F60B0B"
+            android:backgroundTintMode="add" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/addDonutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:onClick="addDonutToOrder"
+        android:text="@string/Add_Donut"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textv1"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/Subtotal_Add_Donut"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/donutSubtotal"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="80dp"
+        android:background="#F1EDED"
+        android:text="@string/Default_Text_View"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textv1"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
